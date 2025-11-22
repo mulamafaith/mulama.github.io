@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Faith Grace Mulama - Computer Science Student</title>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <style>
@@ -438,6 +438,51 @@
             font-size: 0.8rem;
             font-weight: 500;
             border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+
+        /* Workshop list styling (added) */
+        .workshop-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .workshop-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 0.6rem 0;
+            color: var(--text-secondary);
+            border-bottom: 1px dashed rgba(255,255,255,0.03);
+        }
+
+        .workshop-info {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .workshop-info i {
+            color: var(--accent-primary);
+            font-size: 1.1rem;
+        }
+
+        .workshop-link {
+            color: var(--accent-primary);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .workshop-link:hover {
+            text-decoration: underline;
         }
 
         /* Resume Section */
@@ -1010,7 +1055,7 @@
                     <div class="project-image">
                         <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Web Development">
                         <div class="project-overlay">
-                            <a href="#" class="project-link">
+                            <a href="#" class="project-link" aria-label="Portfolio website link">
                                 <i class='bx bx-link-external'></i>
                             </a>
                         </div>
@@ -1027,49 +1072,107 @@
                     </div>
                 </div>
 
-                <!-- Project 2 - Graphic Design -->
+                <!-- New: Workshops & Design Explorations (replaces Brand Identity Design and Motion Graphics Project) -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Graphic Design">
+                        <img src="https://plus.unsplash.com/premium_photo-1723485630190-6d70e7d3c0ab?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d29ya3Nob3BzJTIwY29tcHV0ZXIlMjBzY2llbmNlfGVufDB8fDB8fHww" alt="Workshops">
                         <div class="project-overlay">
-                            <a href="#" class="project-link">
+                            <a href="#workshops" class="project-link" aria-label="Workshops section">
+                                <i class='bx bx-link-external'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content" id="workshops">
+                        <h3>Workshops & Design Explorations</h3>
+                        <p>A collection of workshop outputs and design explorations — click any link to view each project.</p>
+
+                        <ul class="workshop-list">
+                            <li class="workshop-item">
+                                <div class="workshop-info">
+                                    <i class='bx bx-mobile-alt'></i>
+                                    <span>Workshop 1 — Personal Portfolio (deployed)</span>
+                                </div>
+                                <a class="workshop-link" href="https://mulamafaith.github.io/mulama.github.io/" target="_blank" rel="noopener noreferrer" title="Open Workshop 1 in new tab">
+                                    Open <i class='bx bx-link-external'></i>
+                                </a>
+                            </li>
+
+                            <li class="workshop-item">
+                                <div class="workshop-info">
+                                    <i class='bx bxl-figma'></i>
+                                    <span>Workshop 2 — Portfolio Design (Figma)</span>
+                                </div>
+                                <a class="workshop-link" href="https://www.figma.com/design/9CsCP7UXsW9lzEN8FUExln/Portfolio-Design--Community---Copy-?node-id=0-1&t=f05GVDAqmRvgeQ4a-1" target="_blank" rel="noopener noreferrer" title="Open Workshop 2 in new tab">
+                                    Open <i class='bx bx-link-external'></i>
+                                </a>
+                            </li>
+
+                            <li class="workshop-item">
+                                <div class="workshop-info">
+                                    <i class='bx bxl-figma'></i>
+                                    <span>Workshop 3 — GOODREADS (Figma)</span>
+                                </div>
+                                <a class="workshop-link" href="https://www.figma.com/design/BNW3gZ7DaOg8gOHNJGZSFf/GOODREADS?node-id=0-1&t=lB2KrTPjnJIOaRbT-1" target="_blank" rel="noopener noreferrer" title="Open Workshop 3 in new tab">
+                                    Open <i class='bx bx-link-external'></i>
+                                </a>
+                            </li>
+
+                            <li class="workshop-item">
+                                <div class="workshop-info">
+                                    <i class='bx bxl-figma'></i>
+                                    <span>Workshop 4 — GOOD BOOKS (Figma)</span>
+                                </div>
+                                <a class="workshop-link" href="https://www.figma.com/design/ToCWa7vDFokFnoeUHegE84/GOOD-BOOKS?node-id=0-1&t=X8C2u2yuuYczprSy-1" target="_blank" rel="noopener noreferrer" title="Open Workshop 4 in new tab">
+                                    Open <i class='bx bx-link-external'></i>
+                                </a>
+                            </li>
+
+                            <!-- Workshop 5: replaced local file:// PDF link with GitHub-hosted PNG -->
+                            <li class="workshop-item">
+                                <div class="workshop-info">
+                                    <i class='bx bx-file'></i>
+                                    <span>Workshop 5 — Movie Ticket Booking App (mockup)</span>
+                                </div>
+                                <a id="workshop5-link"
+                                   class="workshop-link"
+                                   href="https://raw.githubusercontent.com/mulamafaith/mulama.github.io/main/MOVIE%20TICKET%20BOOKING%20APP.png"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   title="Open Movie Ticket Booking App image in new tab">
+                                    <img class="workshop-thumb"
+                                         src="https://raw.githubusercontent.com/mulamafaith/mulama.github.io/main/MOVIE%20TICKET%20BOOKING%20APP.png"
+                                         alt="Movie Ticket Booking App mockup"
+                                         loading="lazy"
+                                         style="width:72px;height:48px;object-fit:cover;border-radius:6px;border:1px solid rgba(255,255,255,0.06);margin-right:8px;">
+                                    View <i class='bx bx-link-external'></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- Project 3 (kept a single web project card earlier; you can add more as needed) -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Motion Graphics placeholder">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="External link">
                                 <i class='bx bx-link-external'></i>
                             </a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Brand Identity Design</h3>
-                        <p>Complete branding package created with Adobe Illustrator and Photoshop for a local business. School workschops</p>
+                        <h3>Selected Visual Project</h3>
+                        <p>Example motion/visual project showcasing animation and editing skills — replace with your best piece or a link to a video.</p>
                         <div class="project-tags">
-                            <span class="project-tag">Illustrator</span>
-                            <span class="project-tag">Photoshop</span>
-                            <span class="project-tag">Figma</span>
-                            <span class="project-tag">Canva</span>
+                            <span class="project-tag">Animation</span>
+                            <span class="project-tag">After Effects</span>
+                            <span class="project-tag">Video</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 3 - Motion Graphics -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Motion Graphics">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link">
-                                <i class='bx bx-link-external'></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Motion Graphics Project</h3>
-                        <p>Animated explainer video created using After Effects and Cinema 4D for a marketing campaign.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">After Effects</span>
-                            <span class="project-tag">Cinema 4D</span>
-                            <span class="project-tag">Animation</span>
-                            <span class="project-tag">Premiere Pro</span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -1508,6 +1611,37 @@
             initContactForm();
             initScrollAnimations();
         });
+    </script>
+
+    <!-- Workshop 5 fallback script: shows a placeholder and disables the link if the GitHub raw image cannot be loaded -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const a = document.getElementById('workshop5-link');
+        if (!a) return;
+        const img = a.querySelector('img.workshop-thumb');
+        if (!img) return;
+
+        // If the image fails to load, show a placeholder and disable the link
+        img.addEventListener('error', () => {
+          img.src = 'https://via.placeholder.com/320x200?text=Image+not+available';
+          a.href = '#';
+          a.title = 'Image not available';
+          a.setAttribute('aria-disabled', 'true');
+          a.style.pointerEvents = 'none';
+          a.style.opacity = '0.8';
+        });
+
+        // Optional: pre-check resource status and trigger fallback early if raw URL is unreachable
+        fetch(a.href, { method: 'HEAD' })
+          .then(res => {
+            if (!res.ok) {
+              img.dispatchEvent(new Event('error'));
+            }
+          })
+          .catch(() => {
+            img.dispatchEvent(new Event('error'));
+          });
+      });
     </script>
 </body>
 
